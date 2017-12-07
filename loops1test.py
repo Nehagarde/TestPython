@@ -16,3 +16,10 @@ for eachitem in fruitsandveggies:
 for eachitem in fruitsandveggies:
     if 'vege' in eachitem:
         print(eachitem)
+
+        
+names=['neha','sabah','magi']
+phones=['9538523675','7350667558','7340657598']		
+
+for i,j in zip(names,phones):
+	print(i,j)

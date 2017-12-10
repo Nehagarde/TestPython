@@ -15,7 +15,9 @@ def fetchmeaning(word):
     if word in DAT:
         return DAT[word]
     elif word.title() in DAT:
-        return DAT[word.title()]    
+        return DAT[word.title()]
+    elif word.upper() in DAT:
+        return DAT[word.upper()]     
     elif lengthofls > 0:
         yesno = input("Did u mean %s? " % get_close_matches(word, DAT.keys())[0])
         if yesno == 'Y':
